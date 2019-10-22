@@ -1,8 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
     <title>Everett Allen - Portfolio</title>
     <link rel="stylesheet" href="main.css"
+</style>
 </head>
 <body style="background-color:black">
 
@@ -19,7 +56,24 @@
 
 <p>This is all the work I've done in my AP Computer Science Principles class.</p>
 
-
-
+<div class="row">
+  <div class="column">
+    <div class="content">
+        <a href="https://docs.google.com/document/d/1uP0irDjnEhYN-j_z0uUsStOx9ooZXE091D3RDnqJosE/edit">link text</a>
+      <h3>Password Algorithm Project</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+        <a href="https://docs.google.com/presentation/d/1ByfkSB-pYk_9vv-n5yHjYIIE5AQzv0hK4zWeZzBMAMk">link text</a>
+      <h3>Blown to Bits Project</h3>
+    </div>
+  </div>
+<div class="column">
+    <div class="content">
+        <a href="https://scratch.mit.edu/projects/332739641/">link text</a>
+      <h3>Scratch Project</h3>
+    </div>
+  </div>
 </body>
 </html>
